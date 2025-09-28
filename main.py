@@ -25,7 +25,8 @@ async def main() -> None:
     dp.startup.register(on_startup)
 
     from web_server import start_web_server
-    await asyncio.gather(dp.start_polling(bot), start_web_server()) # Запускаем бота и веб-сервер
+    start_web_server() # Запускаем веб-сервер в отдельном потоке
+    await dp.start_polling(bot) # Запускаем бота
 
 
 if __name__ == "__main__":
