@@ -1,0 +1,9 @@
+aiogram==3.10.0
+asyncio==3.4.3
+Flask==3.0.3
+SQLAlchemy==2.*
+APScheduler==3.*
+environs
+matplotlib==3.*
+aiohttp
+argostranslate
